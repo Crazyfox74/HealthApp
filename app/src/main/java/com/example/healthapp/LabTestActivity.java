@@ -55,9 +55,9 @@ public class LabTestActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab_test);
 
-        btnGoToCart = findViewById(R.id.buttonLTGoToCart);
-        btnBack = findViewById(R.id.buttonLTBack);
-        listView = findViewById(R.id.listViewLT);
+        btnGoToCart = findViewById(R.id.buttonCartCheckout);
+        btnBack = findViewById(R.id.buttonCartBack);
+        listView = findViewById(R.id.listViewCart);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,5 +94,11 @@ public class LabTestActivity extends AppCompatActivity {
             }
         });
 
+        btnGoToCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LabTestActivity.this, CartLabActivity.class));
+            }
+        });
     }
 }

@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -36,7 +35,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed3 = findViewById(R.id.editTextAppContactNumber);
         ed4 = findViewById(R.id.editTextAppFees);
 
-        dateButton = findViewById(R.id.buttonAppDate);
+        dateButton = findViewById(R.id.buttonCartDate);
         timeButton = findViewById(R.id.buttonAppTime);
 
         btnBook = findViewById(R.id.buttonBookAppointment);
