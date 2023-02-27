@@ -29,9 +29,9 @@ public class BookAppointmentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book_appointment);
 
-        tv = findViewById(R.id.textViewAppTitle);
-        ed1 = findViewById(R.id.editTextAppFullName);
-        ed2 = findViewById(R.id.editTextAppAddress);
+        tv = findViewById(R.id.textViewPackageName3);
+        ed1 = findViewById(R.id.editTextLTBFullname);
+        ed2 = findViewById(R.id.editTextLTBAddress);
         ed3 = findViewById(R.id.editTextAppContactNumber);
         ed4 = findViewById(R.id.editTextAppFees);
 

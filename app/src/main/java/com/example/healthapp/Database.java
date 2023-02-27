@@ -22,6 +22,9 @@ public class Database extends SQLiteOpenHelper {
 
         String qry2 = "create table cart(username text,product text,price float,otype text)";
         sqLiteDatabase.execSQL(qry2);
+
+        String qry3 = "create table orderplace(username text,fullname text,address text,contactno text,pincode int,date text,time text,amount float, otype text)";
+        sqLiteDatabase.execSQL(qry3);
     }
 
     @Override
@@ -81,7 +84,8 @@ public class Database extends SQLiteOpenHelper {
         String str[] = new String[2];
         str[0] = username;
         str[1] = otype;
-        SQLiteDatabase db = getReadableDatabase();
+//        SQLiteDatabase db = getReadableDatabase();
+        SQLiteDatabase db = getWritableDatabase();
         db.delete("cart", "username=? and otype=?", str);
         db.close();
     }
@@ -102,5 +106,21 @@ public class Database extends SQLiteOpenHelper {
         }
         db.close();
         return arr;
+    }
+
+    public void addOrder(String username, String fullname, String address, String contact, int pincode, String date, String time, float price, String otype) {
+        ContentValues cv = new ContentValues();
+        cv.put("username", username);
+        cv.put("fullname", fullname);
+        cv.put("address", address);
+        cv.put("contactno", contact);
+        cv.put("pincode", pincode);
+        cv.put("date", date);
+        cv.put("time", time);
+        cv.put("amount", price);
+        cv.put("otype", otype);
+        SQLiteDatabase db = getWritableDatabase();
+        db.insert("orderplace", null, cv);
+        db.close();
     }
 }

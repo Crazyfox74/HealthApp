@@ -65,7 +65,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber" />
 
     <EditText
-        android:id="@+id/editTextAppAddress"
+        android:id="@+id/editTextLTBAddress"
         android:layout_width="331dp"
         android:layout_height="40dp"
         android:layout_marginTop="28dp"
@@ -83,7 +83,7 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFullName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBFullname" />
 
     <EditText
         android:id="@+id/editTextAppContactNumber"
@@ -104,10 +104,10 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLTBAddress" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textView_logo9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="HealthApp"
@@ -121,7 +121,7 @@
         app:layout_constraintVertical_bias="0.036" />
 
     <TextView
-        android:id="@+id/textViewAppTitle"
+        android:id="@+id/textViewPackageName3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -133,11 +133,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView_logo9"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextAppFullName"
+        android:id="@+id/editTextLTBFullname"
         android:layout_width="331dp"
         android:layout_height="40dp"
         android:layout_marginTop="36dp"
@@ -155,7 +155,7 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewAppTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewPackageName3" />
 
     <Button
         android:id="@+id/buttonBookAppointment"
