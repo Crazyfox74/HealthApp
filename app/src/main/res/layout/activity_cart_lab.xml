@@ -52,7 +52,7 @@
 
 
     <ListView
-        android:id="@+id/listViewCart"
+        android:id="@+id/listViewBM"
         android:layout_width="363dp"
         android:layout_height="345dp"
         android:layout_margin="10dp"
@@ -66,7 +66,7 @@
         app:layout_constraintVertical_bias="0.193" />
 
     <Button
-        android:id="@+id/buttonCartBack"
+        android:id="@+id/buttonBMBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -77,7 +77,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/buttonCartCheckout"
+        android:id="@+id/buttonBMGoToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -133,7 +133,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewCart" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewBM" />
 
     <TextView
         android:id="@+id/textView2"

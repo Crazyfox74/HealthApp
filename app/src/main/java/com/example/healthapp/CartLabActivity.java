@@ -40,10 +40,10 @@ public class CartLabActivity extends AppCompatActivity {
         dateButton = findViewById(R.id.buttonCartDate);
 //        dateButton = findViewById(R.id.buttonCartDate);
         timeButton = findViewById(R.id.buttonCartTime);
-        btnCheckout = findViewById(R.id.buttonCartCheckout);
-        btnBack = findViewById(R.id.buttonCartBack);
+        btnCheckout = findViewById(R.id.buttonBMGoToCart);
+        btnBack = findViewById(R.id.buttonBMBack);
         tvTotal = findViewById(R.id.textViewCartTotalCost);
-        lst = findViewById(R.id.listViewCart);
+        lst = findViewById(R.id.listViewBM);
 
         SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
         String username = sharedpreferences.getString("username", "").toString();
