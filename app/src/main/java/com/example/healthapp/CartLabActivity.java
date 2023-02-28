@@ -37,7 +37,8 @@ public class CartLabActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart_lab);
 
-        dateButton = findViewById(R.id.buttonCartDate2);
+        dateButton = findViewById(R.id.buttonCartDate);
+//        dateButton = findViewById(R.id.buttonCartDate);
         timeButton = findViewById(R.id.buttonCartTime);
         btnCheckout = findViewById(R.id.buttonCartCheckout);
         btnBack = findViewById(R.id.buttonCartBack);
