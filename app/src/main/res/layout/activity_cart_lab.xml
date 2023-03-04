@@ -52,7 +52,7 @@
 
 
     <ListView
-        android:id="@+id/listViewBM"
+        android:id="@+id/listViewBMCart"
         android:layout_width="363dp"
         android:layout_height="345dp"
         android:layout_margin="10dp"
@@ -121,10 +121,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCartTotalCost" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewCartBMTotalCost" />
 
     <TextView
-        android:id="@+id/textViewCartTotalCost"
+        android:id="@+id/textViewCartBMTotalCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -133,7 +133,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listViewBM" />
+        app:layout_constraintTop_toBottomOf="@+id/listViewBMCart" />
 
     <TextView
         android:id="@+id/textView2"
@@ -145,6 +145,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.937"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCartTotalCost" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewCartBMTotalCost" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

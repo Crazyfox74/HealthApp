@@ -47,7 +47,7 @@ public class BuyMedicineDetailsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 SharedPreferences sharedpreferences = getSharedPreferences("shared_prefs", Context.MODE_PRIVATE);
                 String username = sharedpreferences.getString("username", "").toString();
-                String product = tvPackageName.toString().toString();
+                String product = tvPackageName.getText().toString();
                 float price = Float.parseFloat(intent.getStringExtra("text3").toString());
 
                 Database db = new Database(getApplicationContext(), "healthcare", null, 1 );

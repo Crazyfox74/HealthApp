@@ -52,7 +52,7 @@
         app:layout_constraintVertical_bias="0.097" />
 
     <ListView
-        android:id="@+id/listViewBM"
+        android:id="@+id/listViewBMCart"
         android:layout_width="350dp"
         android:layout_height="450dp"
         android:layout_margin="10dp"

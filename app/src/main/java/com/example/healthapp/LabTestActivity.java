@@ -57,7 +57,7 @@ public class LabTestActivity extends AppCompatActivity {
 
         btnGoToCart = findViewById(R.id.buttonBMGoToCart);
         btnBack = findViewById(R.id.buttonBMBack);
-        listView = findViewById(R.id.listViewBM);
+        listView = findViewById(R.id.listViewBMCart);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
