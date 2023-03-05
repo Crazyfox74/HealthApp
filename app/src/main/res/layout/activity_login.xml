@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.084" />
 
     <TextView
-        android:id="@+id/textViewPackageName3"
+        android:id="@+id/textViewBMBPackageName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -76,7 +76,7 @@
         android:textColorHint="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPackageName3" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBMBPackageName" />
 
     <Button
         android:id="@+id/buttonLogin"
